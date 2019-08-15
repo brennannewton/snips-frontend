@@ -10,6 +10,7 @@ header nav ul li {
 header nav ul li a {
   padding: 5px;
   text-decoration: none;
+  color: var(--snips-orange);
 
   transition: color 0.2s;
 }
@@ -19,7 +20,7 @@ header nav ul li a:hover {
 }
 
 .default-header {
-  background-color: cadetblue;
+  background-color: var(--snips-black);
 }
 
 #competitors {
