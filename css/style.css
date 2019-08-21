@@ -2,7 +2,7 @@
 
 @import "resets.css";
 @import "palette.css";
-@import "header.css";
+@import "navigation.css";
 @import "hero.css";
 @import "snippets.css";
 @import "search.css";
@@ -12,5 +12,43 @@ html {
 }
 
 body {
-  background-color: #ebefe3;
+  background-color: var(--snips-white);
+}
+
+.info-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+.info-block:nth-child(2n) {
+  background-color: var(--snips-grey);
+}
+
+.info-block img {
+  width: 100%;
+}
+
+.info-block p {
+  padding: 0 2rem;
+  font-size: 18px;
+  line-height: 2rem;
+}
+
+#competitors {
+  background-color: var(--snips-purple);
+}
+
+#competitors h2 {
+  padding: 2rem;
+  text-align: center;
+}
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.icon-container img {
+  width: 50%;
 }
