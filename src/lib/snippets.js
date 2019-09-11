@@ -1,4 +1,7 @@
-import { Snip } from '../components/Snip.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import hljs from 'highlightjs';
+import Snip from '../components/Snip.js';
 
 export const highlightSnips = () => {
   const snips = document.querySelectorAll('pre code');
@@ -10,12 +13,15 @@ export const highlightSnips = () => {
 // 3. Put HTML into snips
 
 export const renderSnips = snippets => {
+  ReactDOM.render(<Snip />, document.getElementById('snippets'));
+  /*
   const snippetHTML = snippets.map(Snip).join('');
 
   const snippetsElem = document.getElementById('snippets');
   snippetsElem.innerHTML = snippetHTML;
 
   highlightSnips();
+  */
 };
 
 export const fetchSnippets = () =>
